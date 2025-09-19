@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite3
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Flask / SQLAlchemy
+instance/
+migrations/versions/
+
+# IDE / Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Coverage / testing
+htmlcov/
+.coverage
+coverage.xml
+.pytest_cache/
+.tox/
+
+# Build / dist
+dist/
+build/
+*.egg-info/
