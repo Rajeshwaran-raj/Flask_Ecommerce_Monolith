@@ -1,48 +1,45 @@
-# # Python
-# __pycache__/
-# *.pyc
-# *.pyo
-# *.pyd
-# *.pkl
-# *.db
-# *.sqlite3
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
 
-# # Virtual environments
-# .venv/
-# env/
-# venv/
-# ENV/
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
 
-# # Flask / SQLAlchemy
-# instance/
-# migrations/versions/
+# Flask instance
+instance/
 
-# # IDE / Editors
-# .vscode/
-# .idea/
-# *.sublime-project
-# *.sublime-workspace
+# IDE / Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
 
-# # OS files
-# .DS_Store
-# Thumbs.db
+# OS files
+.DS_Store
+Thumbs.db
 
-# # Logs
-# *.log
+# Logs
+*.log
 
-# # Env files
-# .env
-# .env.local
-# .env.*.local
+# Env files (do NOT push secrets)
+.env
+.env.local
+.env.*.local
 
-# # Coverage / testing
-# htmlcov/
-# .coverage
-# coverage.xml
-# .pytest_cache/
-# .tox/
+# Coverage / testing
+htmlcov/
+.coverage
+coverage.xml
+.pytest_cache/
+.tox/
 
-# # Build / dist
-# dist/
-# build/
-# *.egg-info/
+# Build / dist
+dist/
+build/
+*.egg-info/
