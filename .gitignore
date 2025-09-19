@@ -1,48 +1,68 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.pkl
-*.db
-*.sqlite3
+*.py[cod]
+*$py.class
 
-# Virtual environments
+# Virtual environment
 .venv/
 env/
 venv/
 ENV/
 
-# Flask / SQLAlchemy
-instance/
-migrations/versions/
-
-# IDE / Editors
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# OS files
-.DS_Store
-Thumbs.db
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
 # Logs
 *.log
+*.out
+*.err
 
-# Env files
-.env
-.env.local
-.env.*.local
-
-# Coverage / testing
+# Unit test / coverage reports
 htmlcov/
-.coverage
-coverage.xml
-.pytest_cache/
 .tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
 
-# Build / dist
-dist/
-build/
-*.egg-info/
+# SQLite / local databases
+*.db
+*.sqlite3
+local.db
+
+# Environment & config files
+.env
+.env.*
+!*.example     # keep .env.example
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Flask migrations (keep versions but ignore cache)
+migrations/versions/__pycache__/
+
+# System files
+.DS_Store
+Thumbs.db
