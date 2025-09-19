@@ -1,9 +1,11 @@
-# Python cache
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.pkl
+*.db
+*.sqlite3
 
 # Virtual environments
 .venv/
@@ -11,8 +13,9 @@ env/
 venv/
 ENV/
 
-# Flask instance
+# Flask / SQLAlchemy
 instance/
+migrations/versions/
 
 # IDE / Editors
 .vscode/
@@ -27,7 +30,7 @@ Thumbs.db
 # Logs
 *.log
 
-# Env files (do NOT push secrets)
+# Env files
 .env
 .env.local
 .env.*.local
