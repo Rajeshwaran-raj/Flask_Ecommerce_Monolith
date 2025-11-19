@@ -68,5 +68,8 @@ migrations/versions/__pycache__/
 Thumbs.db
 
 
+# Python compiled files
 *.pyc
 __pycache__/
+*.pyo
+*.pyd
