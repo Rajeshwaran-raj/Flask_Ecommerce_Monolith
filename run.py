@@ -7,15 +7,12 @@ app = create_app()
 
 def auto_migrate_and_seed():
     """Run migrations and seeders automatically when app starts."""
-    # Ensure migrations folder exists
     if not os.path.exists("migrations"):
         subprocess.call(["flask", "--app", "run.py", "db", "init"])
 
-    # Run migrations
     subprocess.call(["flask", "--app", "run.py", "db", "migrate", "-m", "auto migration"])
     subprocess.call(["flask", "--app", "run.py", "db", "upgrade"])
 
-    # Run seeders
     try:
         seed_run()
     except Exception as e:
@@ -23,4 +20,8 @@ def auto_migrate_and_seed():
 
 if __name__ == "__main__":
     auto_migrate_and_seed()
-    app.run(debug=True)
+
+    host = os.getenv("HOST", "127.0.0.1")
+    port = int(os.getenv("PORT", 5000))
+
+    app.run(host=host, port=port, debug=True)
